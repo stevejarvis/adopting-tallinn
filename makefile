@@ -2,7 +2,7 @@ CC=pdflatex
 
 all: outline.pdf
 
-%.pdf: %.ltx makefile
+%.pdf: %.ltx makefile %.bib
 	$(CC) $<
 	biber outline
 	$(CC) $<
