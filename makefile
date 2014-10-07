@@ -4,8 +4,8 @@ all: outline.pdf
 
 %.pdf: %.ltx makefile
 	$(CC) $<
+	biber outline
+	$(CC) $<
 
 clean:
-	rm *.pdf
-	rm *.log
-	rm *.aux
+	rm -f *.pdf *.log *.aux *.out *.bbl *.blg *.log *.bcf *.xml
