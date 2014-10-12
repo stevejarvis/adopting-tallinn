@@ -13,7 +13,7 @@
 
 % Doc formatting, double space with 1.25 sides and 1'' top/bottom
 \usepackage{setspace}
-\doublespacing
+%\doublespacing
 \usepackage[margin=1.25in,top=1in,bottom=1in]{geometry}
 \usepackage{enumerate}
 
@@ -43,51 +43,66 @@
         attack in cyber space.\footnote{\cite{cyberAttacksYale}, pages 431-435}
         \4 Some states adopt a broad view of what constitutes illegal
         force while others have developed a much more exclusive
-        classification.\footnote{\cite{tallinnManual2013}, page 17, para 3}
+        classification.\footnote{\cite{tallinnManual}, page 17, para 3}
         \4 With no consensus on what constitutes illegal cyber activity, there
         can be no agreement on suitable international laws.
     \2 The Tallinn Manual aims to fill the void of defined international law
-    when it comes to cyber activity. \footnote{\cite{tallinnManual2013}, page
+    when it comes to cyber activity. \footnote{\cite{tallinnManual}, page
       18, para 2}
+      \3 The Tallinn Manual was the effort of an international group of experts,
+      upon encouragement from the North Atlantic Treaty Organization
+      (NATO).\footnote{\cite{tallinnManual}, page 16, para 1}
 
   \1 Challenges. Determine whether the Tallinn Manual is an effective
   tool beyond a theoretical use. Whether it retains usefulness when applied to
   a real life attack.
-    \2 Consider, specifically, the actions and consequences of the Flame
-    Malware.\footnote{\cite{flameForbes2012}}
-      \3 Explain Flame technically, briefly.
-        \4 It was an attack that allowed the attacker to impersonate a Microsoft
-        server, letting the attacker distribute malware using the Windows update
-        service.\footnote{\cite{TODO flamedetails}}
-        \4 Not only extremely technically complex, extremely
-        expensive.\footnote{\cite{flameForbes2012}}
-      \3 What were Flame's goals and what it accomplished.
-      \3 Legal issues related to Flame.
-        \4 International boundaries crossed.
-        \4 Believed interaction between U.S. government and
-        U.S. corporation.\footnote{\cite{TODO flamepolitical}}
-        \4 How it effected civilians.
+    \2 Consider, specifically, the actions and consequences of the Stuxnet
+    Worm. Determine whether international law was broken, and if so, how
+    severely.
+      \3 Explain Stuxnet technically, briefly.
+        \4 It was an attack to sabotage the programmable logic controllers
+        (PLCs) at the Iran nuclear enrichment facility and significantly delay
+        Iran's potential development of nuclear weapons.\footnote{\cite{symantecStuxnetOverview}}
+        \4 Stuxnet was only extremely technically complex, extremely
+        expensive.\footnote{\cite{stuxnetCostComplexity}}
+      \3 Why Stuxnet?
+        \4 Prime alternatives are Flame Malware\footnote{\cite{flameForbes2013}}
+        and Russia's cyber attack on
+        Georgia.\footnote{\cite{russiaAttackGeorgiaAC}}
+        Flame was used for only espionage, and that is generally considered
+        legal under international
+        law.\footnote{\cite{tallinnManual}, rule 6, comment 4.} Russia's cyber
+        attack on Georgia, conversely, was used to further a kinetic attack and
+        falls clearly into the category of armed
+        conflict.\footnote{\cite{tallinnManual}, page 94, para 6 and
+          \cite{tallinnManual}, rule 20.} These conclusions are unsurprising and
+        do not feel controversial.
+      \3 What were Stuxnet's goals and what it accomplished.
+        \4 Cause damage to and slow development of Iran's nuclear
+        development.\footnote{\cite{stuxnetGoalResult}}
+        \4 Iran refused to comment on whether it suffered damage from
+        Stuxnet. Other reports conclude that their nuclear program likely
+        did suffer significant setbacks.\footnote{\cite{stuxnetIsis}}
+      \3 Legal issues related to Stuxnet, on which guidance is desired from the
+      Tallinn Manual.
+        \4 Intentional damage caused to a sovereign state's infrastructure.
+        \4 The damage was intended to stifle development of military operations.
+        \4 The worm leaked into the wild and civilians, Kapersky even claimed
+        it's infected Russian nuclear
+        facilities.\footnote{\cite{stuxnetLeakKapersky}}
 
-  \1 Description of policy framework as relevant to this problem.
-    \2 The existing, official framework includes the United Nations Security
-    Council and the Geneva Convention.
-      \3 Effectiveness of traditional means.
-        \4 Well established and high participation. For states to obey the laws
-        they have to accept them, and the UN is more accepted than any national
-        body.\footnote{\cite{TODO}}
-      \3 Where it's laws, regulations, and governing bodies fall short.
-        \4 Security council deadlock negates most usefulness.
-    \2 Decide whether the Tallinn Manual is relevant or useful in making such
-    determinations.
-      \3 The Tallinn Manual was the effort of an international group of experts,
-      upon encouragement from NATO.\footnote{\cite{tallinnManual2013}, page 16,
-      para 1}
-      \3 Where the Tallinn Manual met or exceeded the needs of an international
-      cyber conflict doctrine in the case of Flame.
-        \4 TODO To what end? Military? Political??
-        \4 Greatly effected civilians.
-      \3 Where the Tallinn Manual fell short or failed to be applicable.
-        \4 Who gets to persecute? Who even gets to accuse a suspect?
+  \1 Description of Tallinn Manual as relevant to this problem. Decide whether
+  the Tallinn Manual is relevant or useful in making such determinations.
+    \2 Where the Tallinn Manual met or exceeded the needs of an international
+    cyber conflict doctrine in the case of Stuxnet.
+      % Remember, an armed attack exceeds a use of force.
+      \3 Unanimously determined to be in violation of international law and a
+      use of force by the group of
+      experts.\footnote{\cite{stuxnetForceWired2013}}
+    \2 Where the Tallinn Manual fell short or failed to be applicable.
+      \3 Who gets to persecute? Who even gets to accuse a suspect?
+      \3 How might we determine what constitutes an armed cyber attack?
+      \3 Is it even possible to have a ``armed'' cyber attack?
 
   \1 TODO Proposed solution for resolving international cyber conflict.
     \2 Was it effective? The ability to apply the Tallinn Manual to cyber
