@@ -1,64 +1,5 @@
 % LaTeX for Steve Jarvis' CS 591
 
-% The story I'm aiming to tell:
-%
-%% INTRO what are we doing?:
-%
-% Highlight some of the complications cyber attacks introduce when
-% trying to apply traditional rules of conflict (jus ad bellum, jus in bello).
-% We need something more.
-%
-% Introduce the Tallinn Manual. Can the Tallinn Manual satisfy our need for
-% guidance in cyber conflict?
-%
-% Goal of this report is to decide if the Tallinn Manual is suitable for official
-% adoption in international conflict.
-%
-%% EXPLANATION of the issue, what's Stuxnet and what's lacking in traditional law?:
-%
-% Examine Stuxnet details. Why is Stuxnet special?
-%
-% Go over the help we need from the Tallinn Manual regarding Stuxnet. Where does
-% traditional law miss and what do we need from Tallinn Manual?
-%
-%% DETERMINE the applicability of Tallinn Manual to Stuxnet. Does it work?
-%
-% How well does the Tallinn Manual apply to the case of Stuxnet? On which issues
-% did it provide sufficient guidance, and where did it leave us wanting?
-%
-% What can we decide with Tallinn's help, and does it seem right?
-%
-%% PROPOSED SOLUTION is it's effective, what should we do about it?:
-%
-% It seems the shortcomings were simply issues not agreed upon by the experts
-% or not yet resolved, rather than egregious oversights. It is generally impressively
-% thoughtful and maintains the spirit of traditional laws and treaties when
-% applying them to the Internet.
-%
-% So, the international community should agree to a treaty which adopts the
-% Tallinn Manual as:
-% 1) An agreed upon conduct for cyber conduct.
-% 2) A starting point for ruling on future conflict.
-% The UN Security Council can be entrusted with ruling on future conflicts, as it
-% currently does with kinetic conflict, using the Tallinn Manual as a general
-% guide.
-%
-% Rulings made by the Security Council on cyber conflict should be considered
-% international law, much as precedents build upon the US Constitution and
-% previous interpretations in the United States to become law.
-%
-%% ANALYSIS:
-%
-% Sounds like a good start.
-%
-%% CONCLUSION:
-%
-% This will be an effective solution to dealing with cyber conflict, as it is
-% tailored towards continual evolution, which is exactly what we should expect in
-% the age of the Internet.
-%
-
-
 % 12pt required for project
 \documentclass[12pt]{scrreprt}
 
@@ -72,10 +13,9 @@
 \date{\today}
 
 % Doc formatting, double space with 1.25 sides and 1'' top/bottom
-%% See if any of this is actually necessary in final doc or if it just does it.
-%\usepackage{setspace}
-%\doublespacing
-%\usepackage[margin=1.25in,top=1in,bottom=1in]{geometry}
+\usepackage{setspace}
+\doublespacing
+\usepackage[margin=1.25in,top=1in,bottom=1in]{geometry}
 \usepackage{enumerate}
 
 % Page header
@@ -91,241 +31,370 @@
 
 % body
 \section*{Introduction}
-     How can we effectively deal with the new world of international cyber
-    operations?
-     International law currently has a limited means for dealing with criminal
-    cyber action.
-       The United Nations (UN) Charter and Geneva Conventions deal, historically,
-      with only kinetic warfare.
-         Cyber actions rarely have a direct or obvious
-        kinetic counterpart with which to compare. Differing interpretations
-        results in dissension
-        among states, with no clear answers on how to classify a use of force or
-        armed attack online, or even whether it's possible to launch an armed
-        attack in cyber space.\footnote{\cite{cyberAttacksYale}, pages 431-435.}
-         Some states adopt a broad view of what constitutes illegal
-        force while others have developed a much narrower
-        classification.\footnote{\cite{tallinnManual}, page 17, para 3.}
-         With no consensus on what constitutes permissible cyber activity, there
-        can be no agreement on suitable international laws or treaties.
-     The Tallinn Manual aims to fill the void of defined international law
-    or agreements when it comes to cyber
-    activity.\footnote{\cite{tallinnManual}, page 18, para 2.}
-       The Tallinn Manual was the effort of an international group of experts,
-      upon encouragement from the North Atlantic Treaty Organization
-      (NATO), to correlate existing international laws to
-      cyberspace.\footnote{\cite{tallinnManual}, page 16, para 1}
-     The goal of this report is to determine whether the Tallinn Manual is
-    suitable for official adoption in the international community by examining
-    its applicability to the Stuxnet worm.
+In the wake of the Second World War, the international community recognized the
+necessity of establishing agreements for international conflict.
+The United Nations was organized in 1942\footnote{\cite{unitedNationsHistory}}
+and the Geneva Conventions in 1949.\footnote{\cite{genevaConventionsOrigins}}
+These organizations founded treaties that defined international laws for entering
+into conflict (\textit{jus ad bellum}) and behavior during conflict
+(\textit{jus in bello}).
 
-\section*{Where Traditional Law is Lacking is Cyberspace}
-  % Explanation of the issue, what's Stuxnet and what's lacking in traditional law?
-   Describe the issue. Explain Stuxnet, why it is the chosen event for
-  consideration, and where guidance is needed from a cyber operations guide
-  such as the Tallinn Manual.
-     Consider the actions and consequences of the Stuxnet
-    Worm. Determine which, if any, international law was broken, and if so, how
-    severely.
-       Explain Stuxnet technically, briefly.
-         Stuxnet was an attack to sabotage the programmable logic controllers
-        (PLCs) at the Iran nuclear enrichment facility and delay
-        Iran's potential development of nuclear
-        weapons.\footnote{\cite{symantecStuxnetOverview}}
-         Stuxnet was not only extremely technically complex, it was also
-        extremely expensive.\footnote{\cite{stuxnetCostComplexity}} As such,
-        it's believed to have been conducted by a nation-state.
-       Why Stuxnet deserves the focus.
-         Stuxnet offers a more complex situation and is the most likely
-        candidate for a cyber-only operation to be considered a use of force.
-         Prime alternative operations include Flame
-        Malware\footnote{\cite{flameForbes}} and Russia's cyber attack on
-        Georgia.\footnote{\cite{russiaAttackGeorgiaAC}}
-        Flame was used for only espionage, and that is generally considered
-        legal under international
-        law.\footnote{\cite{tallinnManual}, rule 6, comment 4.} Russia's cyber
-        attack on Georgia, conversely, was used to further a kinetic attack and
-        falls clearly into the category of armed
-        conflict.\footnote{\cite{tallinnManual}, page 94, para 6 and
-          \cite{tallinnManual}, rule 20.} These conclusions are unsurprising and
-        do not feel controversial.
-       What were Stuxnet's goals and what it accomplished.
-         Stuxnet aimed to damage to and slow development of Iran's nuclear
-        development.\footnote{\cite{stuxnetGoalResult}}
-         Iran refused to comment on whether it suffered damage from
-        Stuxnet. It's widely held that their nuclear program
-        did suffer significant setbacks, on the order of what could have been
-        accomplished with a kinetic attack.\footnote{\cite{stuxnetIsis}}
-       Legal issues related to Stuxnet, on which there exists little or no
-      help from established international law and guidance is desired from the
-      Tallinn Manual.
-         Intentional damage caused to a sovereign state's infrastructure by a
-        computer virus. Was it:
-        \begin{enumerate}
-          \item Illegal?
-          \item A use of force?\footnote{\cite{unCharter}. See Article 2(4).}
-          \item An armed attack?\footnote{\cite{unCharter}. See Article 51.}
-        \end{enumerate}
-         The damage was intended to stifle development of military operations.
-        How severe of a response (if any) is warranted?
-         The worm leaked into the wild and infected civilian devices, Kapersky
-        even claimed it's infected Russian nuclear
-        facilities.\footnote{\cite{stuxnetLeakKapersky}} What repercussions
-        might this entail?
-         In kinetic warfare, belligerents cannot use neutral territory for
-        transport of munitions, and it is a duty of the neutral state to ensure
-        that is the case.\footnote{\cite{hagueConventionV5}. See Articles 2 and 5.}
-        Is it legal to move malware through the infrastructure of neutral
-        states, and can those states be held responsible for allowing it?
+The agreements established by these groups had only kinetic warfare in mind. The growing
+prevalence of cyber operations is pushing the boundaries of
+acceptable international behavior, and the international community has little
+means to deal with it. Cyber actions rarely have a direct or obvious kinetic
+counterpart with which to compare, and without established norms, states
+continue to push the boundaries, limited by technical capabilities rather
+than legal or ethical standards. The Tallinn Manual aims to fill the void of
+defined international law or agreements when it comes to cyber
+activity.\footnote{\cite{tallinnManual}, page 18, para 2.}
+
+The goal of this report is to examine whether the Tallinn Manual is
+suitable for adoption in the international community by considering
+its applicability to real life actions, particularly the Stuxnet worm. Its
+adoption could help to ensure the safety and security of all in the coming
+years.
+
+\section*{Our Current Situation}
+As aforementioned, the established international law deals only with kinetic
+warfare. There is no international policy establishing how states can operate
+militarily online. Differing interpretations of established laws results in dissension
+among states, with no clear answers on how to classify illegal online activity,
+whether it's possible to launch an armed attack in cyber
+space\footnote{\cite{cyberAttacksYale}, pages 431-435.}, or whether it's the
+position of the UN to interfere in the online space. %TODO cite Perry of the EFF here??
+
+The diverged viewpoints run wide. With no consensus on what constitutes
+permissible cyber activity, there can be no agreement on suitable international
+laws or treaties. By extension, there are also no means to reprimand states or
+enforce acceptable behavior in cyberspace. This must be overcome in order to
+apply the international continuity provided by traditional agreements to the age
+of the internet.
+
+\section*{Why This Needs to Change}
+States of the world are growing increasingly more reliant on the internet.
+The worlds' critical infrastructure, including power grids, water treatment
+operations, financial institutions and health care equipment, is growing
+increasingly more reliant on the Internet. Citizens and governments rely on
+these services to maintain a healthy and safe standard of living. Sometimes
+critical infrastructure is connected directly to the public
+Internet. This infrastructure, and by extension the cyberspace that
+enables its proper operation, has a direct effect on a state's sovereignty and
+deserves the same protections as the physical world surrounding. The
+international community needs to establish rules protecting states' cyberspace.
+
+\section*{The Tallinn Manual}
+The Tallinn Manual was created to fill the void in international law when it
+comes to cyberspace. It was the effort of an international group of experts,
+upon encouragement from the North Atlantic Treaty Organization (NATO), to
+correlate existing international laws on conflict, largely the Geneva Conventions
+and United Nations Charter, to
+cyberspace.\footnote{\cite{tallinnManual}, page 16, para 1}
+
+Over a period of three years, legal experts from many NATO states discussed the
+complications of cyber operations and how to apply the established laws to this
+new dimension. The result is a set of 25 Rules and many additional thoughts, issues
+and sticking points in the form of commentary throughout the document.
+
+\section*{The Stuxnet Worm}
+Stuxnet was a cyber attack in 2010 to sabotage the programmable logic controllers (PLCs) at
+the Iran nuclear enrichment facility and delay Iran's potential development of
+nuclear weapons.\footnote{\cite{symantecStuxnetOverview}} It did this by causing
+the centrifuges that spin uranium to spin out of control and ultimately destroy
+themselves.\footnote{\cite{stuxnetGoalResult}}
+All the while, the hardware would send positive reports that
+operation was going safely and as planned, so the human operators had no
+indication there was an issue, much less one so dire.
+
+Stuxnet was not only extremely technically complex, it was also extremely
+expensive.\footnote{\cite{stuxnetCostComplexity}} As such, it's believed to
+have been conducted by a nation-state, which qualifies it as a politically
+motivated operation.
+
+There have been many controversial cyber operations in the past decade. Stuxnet
+deserves the focus when considering regulation because it offers, arguably, the
+most complex situation and is the most likely candidate of a cyber-only
+operation to be considered a use of force or an armed attack. Prime alternative
+operations include Flame Malware\footnote{\cite{flameForbes}}
+and Russia's cyber attack on Georgia.\footnote{\cite{russiaAttackGeorgiaAC}}
+Flame was used for only espionage, and that is generally considered legal under
+international law.\footnote{\cite{tallinnManual}, rule 6, comment 4.} Russia's
+cyber attack on Georgia, conversely, was used to further a kinetic attack and
+falls clearly into the category of armed
+conflict.\footnote{\cite{tallinnManual}, page 94, para 6
+  and \cite{tallinnManual}, rule 20.} These conclusions are unsurprising and do
+not feel controversial.
+
+The enrichment facility at Natanz was not connected to the Internet. Despite
+these precautions taken against cyber attack, it proved to still be
+vulnerable. It is believed to have been initially introduced to the target
+environment by an infected USB drive.\footnote{\cite{stuxnetMicroscope}. See
+  page 8.} En route to its final target, though, it is unknown how many state
+boundaries this cyber weapon crossed.
+
+The damage was intended to stifle development of military operations by damaging
+Iran's ability to enrich uranium.
+The precise effects are unknown, as Iran refused to comment on whether it
+suffered damage from Stuxnet. However, it's
+widely held that their nuclear program did suffer significant setbacks, on the
+order of what could have been accomplished with a kinetic
+attack.\footnote{\cite{stuxnetIsis}}
+
+As is with many worms, Stuxnet proved difficult to control. It leaked into the wild and infected
+TODO potentially hundreds of thousands civilian computers and, Kapersky claimed,
+even infected the Russian nuclear facilities. The distinction between civilian
+and nuclear facility infection is significant here, not only due to concerns
+regarding civilian targeting, but because of the nature of Stuxnet itself.
+Stuxnet was designed to recognize the hardware on which it was running, and if
+it wasn't on specific Siemen's PLCs it would sit dormant.\footnote{\cite{stuxnetMicroscope}. TODO}
+Infected civilians would not only be unaware, they would be at no risk of danger
+whatsoever. The Russian nuclear facility, however, would likely suffer grave
+damage, just as Iran's facility at Natanz.
+
+\section*{Cyber Issues Where Traditional Law is Lacking}
+Stuxnet and other cyber operations are unlike any ever seen. The execution of
+attacks such as Stuxnet raise many questions where guidance from a suitable guide
+is desired to determine which laws were broken, how severely they were broken,
+and what response might be warranted.
+
+To start, it is not clear whether Stuxnet was illegal under international law.
+To determine its legality there would need to be consensus that it did violate a
+law or laws already in place. One of the foremost laws would be that set forth
+by Article 2(4) of the UN Charter, which states:
+
+\begin{quote}
+  All Members shall refrain in their international relations from the threat or
+  use of force against the territorial integrity or political independence of
+  any state, or in any other manner inconsistent with the Purposes of the United
+  Nations.\footnote{\cite{tallinnManual}. See Rule 11.}
+\end{quote}
+
+Stuxnet's classification as a use of force is not clear, though. A traditional
+use of force involves military force, though that distinction is not defined in
+the Charter.
+
+The Stuxnet worm leaked into the wild and infected civilian devices, Kapersky even
+claimed it infected Russian nuclear
+facilities.\footnote{\cite{stuxnetLeakKapersky}} A failure to control weapons in
+kinetic warfare is outlawed as indiscriminate, but it's not clear that's what this leak
+equates to.\footnote{\cite{genevaArticle51}} The civilian infection was not
+necessarily harmful, and does mere infection equate to an attack in cyberspace?
+
+It seems obvious that, if decided to be in violation of any laws, the sponsors
+of the malware and its authors could be held responsible. There may be
+additional participants to consider, though. In kinetic warfare,
+belligerents cannot use neutral territory for transport of
+munitions, and it is a duty of the neutral state to ensure that is the
+case.\footnote{\cite{hagueConventionV5}. See Articles 2 and 5.} Is it legal
+to move malware through the infrastructure of neutral states, and can those
+states be held responsible for allowing it?
+
+Equally important is the issue of enforcement and reprimanding states who are
+deemed in violation of any accepted law. The UN Charter allows for a use of
+force as self defense in Article 51, but could a military response to
+a computer hack be reasonable?\footnote{\cite{unCharter}. See Article 51.}
 
 \section*{Applying the Tallinn Manual to the Stuxnet Worm}
   % Determine the applicability of Tallinn Manual to Stuxnet. Does it work?
-   Determine whether the Tallinn Manual is an effective tool in practice
-  by finding whether it proves useful when evaluating Stuxnet.
-     Where the Tallinn Manual meets the needs of an international
-    cyber conflict doctrine.
-      % Remember, an armed attack exceeds a use of force.
-       Unanimously determined to be in violation of international law and a
-      use of force by the group of
-      experts.\footnote{\cite{stuxnetForceWired2013}} Stuxnet directly violates at
-      least Rule 1 of the Tallinn Manual.\footnote{\cite{tallinnManual}. See
-        Rule 1.}
-       The manual goes on to say that the experts were unanimous in
-      determining cyber operations alone might qualify as armed
-      conflict.\footnote{\cite{tallinnManual}. See Rule 22, comment 15.} Tallinn
-      Manual states:
+Now that there have been sufficient, specific issues raised with the
+applicability of existing law to cyberspace we turn to the Tallinn Manual to
+help. We'd like to determine whether the Tallinn Manual is an effective tool in
+practice by finding whether it proves useful when evaluating Stuxnet.
+
+Regarding legality of Stuxnet, the Tallinn Manual defines a cyber operation to
+be a use of force when the
+effects of the operation ``are comparable to non-cyber operations rising to the
+level of a use of force.''\footnote{\cite{tallinnManual}} It goes on to suggest
+a detailed rating scale for cyber operations in the comments, including such
+factors as severity, immediacy, directness, invasiveness and military character,
+most of which Stuxnet clearly violates.\footnote{\cite{tallinnManual}. See page
+  51.} The group of experts unanimously concluded Stuxnet to be a use of force,
+and therefore in violation of Article 2(4) of the UN
+Charter.\footnote{\cite{stuxnetForceWired2013}} Stuxnet also directly violates
+at least Rule 1 of the Tallinn Manual.\footnote{\cite{tallinnManual}. See Rule 1.}
+
+The manual goes on to say
+that the experts were unanimous in determining cyber operations alone might
+qualify as armed conflict.\footnote{\cite{tallinnManual}. See Rule 22, comment
+  15.} Tallinn Manual states:
+
       \begin{quote}
         An armed conflict exists whenever there are here are hostilities, which
         may include or be limited to cyber operations, occurring between two or
         more States.\footnote{\cite{tallinnManual}. See Rule 22.}
       \end{quote}
-       Tallinn Manual also comments directly that the experts were divided
-      on whether Stuxnet qualified as an
-      ``armed attack''.\footnote{\cite{tallinnManual}. See Rule 22, comments 14
-        and 15.} Some experts felt it was justified as anticipatory
-      self-defense.\footnote{\cite{tallinnManual} See Rule 13, comment 13.}
-       Indiscriminate methods of cyber war are
-      prohibited.\footnote{\cite{tallinnManual}. See Rule 43.} The infection of
-      civilians' computers (might\footnote{\cite{tallinnManual}. See Rule 1,
-        comment 6.}) not violate this, because despite infection, the
-      attack was performed only on specific Siemens
-      systems (not civilian).\footnote{\cite{stuxnetGoalResult}}
-         If Kapersky's claims\footnote{\cite{stuxnetLeakKapersky}} that
-        Stuxnet later infected Russian nuclear sites are true, however, Stuxnet
-        did violate this rule, since Stuxnet was decidedly a cyber attack and
-        this would prove it was not limited in its effects as required by the
-        law of armed conflict.\footnote{\cite{genevaArticle51}}
-     Issues on which the Tallinn Manual was not conclusive.
-       What self-defense is legal when it's unclear whether an operation could
-      be classified as an ``armed attack'', or when the Security Council has not
-      yet reached an agreement?
-       How might we determine what constitutes an armed cyber attack?
-         Tallinn Manual is clear that cyber operations alone could amount to
-        an armed attack,\footnote{\cite{tallinnManual}, rule 22.} but provide little
-        means to determine whether a specific operation crosses that threshold,
-        or how an armed attack relates to a use of force (though that is a
-        standing problem with kinetic warfare, just the same). Schmitt says
-        these specifics were intentionally not included in the
-        Tallinn Manual.\footnote{\cite{areThereIntlRules}}
-         If we can assume an armed attack accompanies any use of force and
-        warrants a response under Article 51 (similar to the apparent view of
-        the United States (US)\footnote{\cite{cyberAttacksYale}.
-        See page 433, para 4.}), then the Tallinn Manual provides a
-        fairly complete template to determine whether an operation
-        qualifies.\footnote{\cite{tallinnManual}. See rule 11, esp. comment 9.}
-         Schmitt claimed that:
-        \begin{quote}
-          [...]the majority said that an attack, in the law of war, means
-          you physically harm someone, you break something, you cause physical
-          damage or you interfere in the functionality of an object such that it
-          needs to be actually repaired.\footnote{\cite{areThereIntlRules},
-              para 4.}
-        \end{quote}
-        This seems to qualify Stuxnet as an armed attack, yet other experts
-        still disagreed it crossed the undefined threshold. There was little
-        physical damage done, compared traditional, kinetic
-        force.\footnote{\cite{stuxnetArmedAttackRegister}}
-         There are also issues with immediacy that were not matters in kinetic
-        warfare. Iran didn't know it was being attacked until the threat was
-        over, and with no imminent or current attack there is no justification
-        for an armed response.\footnote{\cite{tallinnManual}. See rule 15.}
-       Who can be held responsible in a cyber attack?
-         Iran obviously had jurisdiction in Stuxnet.\footnote{\cite{
-            tallinnManual}. See Rule 2} Attribution is still a significant
-        challenge though.
-         What of neutral states whose infrastructure was used to transfer
-        Stuxnet? Laws on kinetic warfare imply they can be held accountable, but
-        cyberwar feels different in this regard. The Hague Conventions
-        itself limits a neutral state's obligation to restrict the combatant use
-        of telephone or wireless cables.\footnote{\cite{hagueConventionV5}.
-          See article 8.} Tallinn Manual states it must not
-        \emph{knowingly} allow conflicting parties to use its
-        infrastructure.\footnote{\cite{tallinnManual}. See rule 93.} The experts
-        were split on whether that permits neutral states to passively allow
-        such transmission.\footnote{\cite{tallinnManual} See rule 93,
-          comments 5 and 6.}
-     The conclusions of the Tallinn Manual feel reasonable.
-       Many of the issues not directly resolved are complex and likely require
-      analysis on a case-by-case basis. The issues that were directly resolved
-      are not only founded on accepted international law, but feel just when
-      applied to the cyber world.
+
+This finding alone is significant, because it enables retaliation under Article 51
+to a cyber attack within the realm of possibility. This directly contradicts
+other interpretations of the Charter that reserve an armed attack for armed military
+operation.\footnote{\cite{TODO that paper you downloaded from
+    http://papers.ssrn.com/sol3/papers.cfm?abstract_id=1083889}}
+
+Tallinn Manual also comments directly that the experts were divided on whether
+Stuxnet qualified as an ``armed attack''.\footnote{\cite{tallinnManual}. See Rule 22, comments 14
+  and 15.} Some experts felt it was justified as anticipatory
+self-defense.\footnote{\cite{tallinnManual} See Rule 13, comment 13.}
+
+Indiscriminate methods of cyber war are
+prohibited.\footnote{\cite{tallinnManual}. See Rule 43.} The infection of
+civilians' computers (might\footnote{\cite{tallinnManual}. See Rule 1,
+  comment 6.}) not violate this, because despite infection, the
+attack was performed only on specific Siemens systems (not
+civilian).\footnote{\cite{stuxnetGoalResult}} That is assuming, of course, the
+mere installation of malware does not amount to an attack. It's not clear how
+the Tallinn Manual would categorize such a thing.
+
+If Kapersky's claims\footnote{\cite{stuxnetLeakKapersky}} that Stuxnet later
+infected Russian nuclear sites are true, however, Stuxnet did violate this rule,
+since Stuxnet was decidedly a cyber attack and this would prove it was not
+limited in its effects as required by the law of armed
+conflict.\footnote{\cite{genevaArticle51}}
+
+Issues on which the Tallinn Manual was not conclusive. What self-defense is
+legal when it's unclear whether an operation could be classified as an
+``armed attack'', or when the Security Council has not yet reached an agreement?
+
+How might we determine what constitutes an armed cyber attack? Some states
+adopt a broad view of what constitutes illegal force, while others have developed
+a much narrower classification.\footnote{\cite{tallinnManual}, page 17, para 3.}
+
+As mentioned, Tallinn Manual is clear that cyber operations alone could amount to an armed
+attack,\footnote{\cite{tallinnManual}, rule 22.} but provide little means to
+determine whether a specific operation crosses that threshold,
+or how an armed attack relates to a use of force (though that is a
+standing problem with kinetic warfare, just the same). Schmitt says
+these specifics were intentionally not included in the
+Tallinn Manual.\footnote{\cite{areThereIntlRules}}
+
+If we can assume an armed attack accompanies any use of force and
+warrants a response under Article 51 (similar to the apparent view of
+the United States (US)\footnote{\cite{cyberAttacksYale}.
+  See page 433, para 4.}), then the Tallinn Manual provides a
+fairly complete template to determine whether an operation
+qualifies.\footnote{\cite{tallinnManual}. See rule 11, esp. comment 9.}
+
+Schmitt claimed that:
+\begin{quote}
+  [...]the majority said that an attack, in the law of war, means
+  you physically harm someone, you break something, you cause physical
+  damage or you interfere in the functionality of an object such that it
+  needs to be actually repaired.\footnote{\cite{areThereIntlRules},
+    para 4.}
+\end{quote}
+
+This seems to qualify Stuxnet as an armed attack, yet other experts
+still disagreed it crossed the undefined threshold. There was little
+physical damage done, compared traditional, kinetic
+force.\footnote{\cite{stuxnetArmedAttackRegister}}
+There are also issues with immediacy that were not matters in kinetic
+warfare. Iran didn't know it was being attacked until the threat was
+over, and with no imminent or current attack there is no justification
+for an armed response under Article 51.\footnote{\cite{tallinnManual}. See rule 15.}
+
+Who can be held responsible in a cyber attack? Iran obviously had jurisdiction
+in Stuxnet.\footnote{\cite{tallinnManual}. See Rule 2} Attribution is still a
+significant challenge though.
+
+What of neutral states whose infrastructure was used to transfer
+Stuxnet? Laws on kinetic warfare imply they can be held accountable for
+transferring munitions. The Hague Conventions
+itself limits a neutral state's obligation to restrict the combatant use
+of telephone or wireless cables.\footnote{\cite{hagueConventionV5}.
+  See article 8.} Tallinn Manual states it must not
+\emph{knowingly} allow conflicting parties to use its
+infrastructure.\footnote{\cite{tallinnManual}. See rule 93.} The experts
+were split on whether that permits neutral states to passively allow
+such transmission.\footnote{\cite{tallinnManual} See rule 93, comments 5 and 6.}
 
 \section*{Adopting the Tallinn Manual}
   % Proposed solution. So is it's effective, what should we do about it?
-   Proposed solution for resolving international cyber conflict.
-     The Tallinn Manual does an outstanding job of applying existing
-    international law to the age of the internet, albeit lacking some
-    detail. Much of the gray area is equally undecided in kinetic
-    conflict, terribly complex and likely to evolve at a rapid pace.
-     The Tallinn Manual should be adopted as a starting point for ruling on
-    international cyber conflict and used to evolve international law, just as
-    the US Constitution served as a starting point for US law and was molded
-    by hundreds of years of precedence.
-       Some of the currently conflicting issues (responsibility of neutral
-      states, whether installing malware is itself a violation of sovereignty,
-      etc) on which the experts were divided could be solidified with time and
-      applied as general rules.
-     The current members of the UN should be encouraged to sign a treaty
-    adopting adherence to the Tallinn Manual.
-     Violation of the Tallinn Manual should be ruled on by the UN Security
-    Council, at which point any retaliation, up to and including that under
-    Article 51, is a potential outcome. This is also suggested in the Tallinn
-    Manual itself.\footnote{\cite{tallinnManual}, rule 18.}
-     There should be an official means to make lasting and binding amendments
-    to the Manual (or treaty), as deemed necessary by the Security Council and
-    members of the UN.
+Proposed solution for resolving international cyber conflict.
+The Tallinn Manual does an outstanding job of applying existing
+international law to the age of the internet, albeit lacking some
+detail. Much of the gray area is equally undecided in kinetic
+conflict, terribly complex and likely to evolve at a rapid pace.
+The Tallinn Manual should be adopted as a starting point for ruling on
+international cyber conflict and used to evolve international law, just as
+the US Constitution served as a starting point for US law and was molded
+by hundreds of years of precedence.
 
-\section*{Where Adoption Leaves International Cyber Space}
-   Analysis of the solution.
-     The solution is neither complete nor final, but as with all law, we must
-    set up a solid base with which to work and progress over time. The
-    established international law made preparation for the age of the internet
-    possible, and in the same way, the Tallinn Manual sets the stage for the
-    tools we need in decades to come, as the world grows increasingly more
-    reliant on the Internet.
-     Schmitt implied he believes the standards for classifying armed attacks
-    in cyberspace will evolve in coming years:
-    \begin{quote}
-      I anticipate that we'll see a lot of thresholds coming down that will
-      allow states to respond more vibrantly to cyber attacks that  might not be
-      possible under the law as we found it.\footnote{\cite{areThereIntlRules},
-        para 23.}
-    \end{quote}
-     Achieving concurrence on acceptable cyber acts will likely prove
-    challenging, but it is a necessary feature as the cyber space continues to
-    evolve in ways not yet considered.
+Adoption of the Tallinn Manual raises more than only technical questions.
+Some of the greatest hurdles to adopting the Tallinn Manual are political.
+As a NATO sponsored project, the translation of existing law to
+the realm of the internet may be accompanied by a Western bias. Further, those
+states usually at odds with NATO will be unlikely to consider a set of rules
+built solely by NATO.
+
+Some of the currently conflicting issues (responsibility of neutral
+states, whether installing malware is itself a violation of sovereignty,
+etc) on which the experts were divided could be solidified with time and
+applied as general rules. Those states outside NATO, particularly those often in
+disagreement, should be encouraged to participate in solidifying and defining
+the rule set. This will help the Tallinn Manual to 1) be free of NATO bias and
+2) be supported by all states, not just those who are members of NATO.
+
+Once the evolution of the Tallinn Manual is made a global participation, the
+current members of the UN should be encouraged to sign a treaty
+adopting adherence to the rules it defines. This is the ultimate goal.
+
+Violation of the Tallinn Manual should be ruled on by the UN Security
+Council, at which point any retaliation, up to and including that under
+Article 51, is a potential outcome. This is also suggested in the Tallinn
+Manual itself.\footnote{\cite{tallinnManual}, rule 18.}
+
+There should be an official means to make lasting and binding amendments
+to the Manual (or treaty), as deemed necessary by the Security Council and
+members of the UN.
+
+\section*{Where Adoption Brings International Cyber Space}
+Analysis of the solution.
+The solution is neither complete nor final, but as with all law, we must
+set up a solid base with which to work and progress over time. The
+established international law made preparation for the age of the internet
+possible, and in the same way, the Tallinn Manual sets the stage for the
+tools we need in decades to come, as the world grows increasingly more
+reliant on the Internet.
+Schmitt implied he believes the standards for classifying armed attacks
+in cyberspace will evolve in coming years:
+
+\begin{quote}
+  I anticipate that we'll see a lot of thresholds coming down that will
+  allow states to respond more vibrantly to cyber attacks that  might not be
+  possible under the law as we found it.\footnote{\cite{areThereIntlRules},
+    para 23.}
+\end{quote}
+
+The ability of a cyber operation to be classified as an armed attack, and by
+extension the possibility of responding with military force under Article 51, is
+quite significant and can lead to a severe escalation during times of
+conflict. This is appropriate, though, as the world's critical infrastructure
+grows increasingly more online and cyber weapons increase in ability and
+complexity constantly. It is an antiquated notion that military ``arms'' must
+explode, shoot, or even directly cause bloodshed.
+
+The conclusions of the Tallinn Manual feel reasonable.
+Many of the issues not directly resolved are complex and likely require
+analysis on a case-by-case basis. The issues that were directly resolved
+are not only founded on accepted international law, but feel just when
+applied to the cyber world.
+
+Achieving concurrence on acceptable cyber acts will likely prove
+challenging, but it is a necessary feature as the cyber space continues to
+evolve in ways not yet considered.
 
 \section*{Conclusion}
-   Conclusion
-     The Tallinn Manual is worthy of official acceptance in founding
-    international law and standards.
-     The international community can look forward to a healthy, global
-    internet with help from the Tallinn Manual and subsequent discussions on
-    permissible and responsible online operations and stewardship.
-     The efforts of the Tallinn Manual will give us confidence in the
-    international arena that we, collectively, are continuing to act in cyber
-    space in the spirit of already established and accepted international laws.
-    It is the confidence to move forward.
+Conclusion
+The Tallinn Manual offers help in an area which the international community much
+needs it in the coming years. It should be taken advantage of.
+
+The Tallinn Manual is worthy of official acceptance in founding international
+law and standards. The international community can look forward to a healthy,
+global internet with help from the Tallinn Manual and subsequent discussions on
+permissible and responsible online operations and stewardship.
+The efforts of the Tallinn Manual will give us confidence in the
+international arena that we, collectively, are continuing to act in cyber
+space in the spirit of already established and accepted international laws.
+It is the confidence to move forward.
 
 \newpage
 \nocite{*}
