@@ -142,7 +142,7 @@ prior (and maybe since). Stuxnet was not only extremely complex, it was also
 highly expensive.\footnote{\cite{stuxnetCostComplexity}} This evidence supports
 the theory that the attack was orchestrated by a nation-state, which qualifies
 it as a politically motivated operation. More recently, more concrete evidence
-has surfaced that it was executed by a nation-state, particularly a
+has surfaced that it was in fact executed by a nation-state, particularly a
 collaboration between the United States and Israel.\footnote{\cite{TODO http://abcnews.go.com/blogs/headlines/2013/07/edward-snowden-u-s-israel-co-wrote-cyber-super-weapon-stuxnet/}}
 
 Stuxnet exists amidst many controversial cyber operations over the past decade,
@@ -191,20 +191,23 @@ Stuxnet was designed to recognize the hardware on which it was running, and if
 it wasn't on specific Siemen's PLCs it would sit
 dormant.\footnote{\cite{stuxnetPlants}}
 Infected civilians would not only be unaware, they would be at no risk of danger
-whatsoever. The infected industrial facilities, however, would likely suffer grave
-damage, just as Iran's facility is believed to have experienced at
+whatsoever. The infected industrial facilities, however, would likely suffer
+grave damage, just as Iran's facility is believed to have experienced at
 Natanz.\footnote{\cite{stuxnetIsis}}
 
 \section*{Cyber Issues Where Traditional Law is Lacking}
-Stuxnet and other cyber operations are unlike any ever seen. The execution of
-attacks such as Stuxnet raise many questions where guidance from a suitable guide
-is desired to determine which laws were broken, how severely they were broken,
-and what response might be warranted.
+Cyber operations like Stuxnet are unlike any with which the world has yet dealt.
+The execution of these attacks raise many questions where guidance from a
+suitable guide is desired to determine which laws, if any, were broken, how
+severely they were broken, and what response might be warranted. There are a few
+issues which warrant specific focus:
 
-At the most basic, it is not clear whether Stuxnet was illegal under international law.
-To determine its legality there would need to be consensus that it did violate a
-law or laws already in place. One of the foremost laws would be that set forth
-by Article 2(4) of the UN Charter, which states:
+\subsection*{Use of Force}
+At the most basic, it is not clear whether Stuxnet was even illegal under
+international law. To determine its legality there would need to be consensus
+that it did violate a law or laws already in place. One of the foremost laws
+would be that prohibiting a use of force, set forth by Article 2(4) of the UN
+Charter. It states:
 
 \begin{quote}
   All Members shall refrain in their international relations from the threat or
@@ -213,17 +216,39 @@ by Article 2(4) of the UN Charter, which states:
   Nations.\footnote{\cite{tallinnManual}. See Rule 11.}
 \end{quote}
 
-Stuxnet's classification as a use of force is not clear, though. A traditional
-use of force involves military force, though that distinction is not defined in
-the Charter.
+Stuxnet's classification as a use of force is not clear, however. Though the
+distinction is not defined in the Charter, a traditional use of force involves
+military force and violence, whereas Stuxnet, as most cyber attacks, did not
+even include a physical presence.
 
-The Stuxnet worm leaked into the wild and infected civilian devices, Kapersky even
-claimed it infected Russian nuclear
-facilities.\footnote{\cite{stuxnetLeakKapersky}} A failure to control weapons in
-kinetic warfare is outlawed as indiscriminate, but it's not clear that's what this leak
-equates to.\footnote{\cite{genevaArticle51}} The civilian infection was not
+\subsection*{Armed Attack}
+Some states adopt a generally encompassing definition of what constitutes
+illegal force, while others operate with much narrower
+classifications.\footnote{\cite{tallinnManual}, page 17, para 3.} Supposing the
+international community accepts the view that an armed attack always coincides a
+use of force this issue is the same as the last, but this is unlikely. How might
+an armed cyber attack be quantified?
+
+Some popular definitions of an armed attack require it to be violent, political,
+and (TODO this definition was in our reading one week). There have been no
+cyber-only attacks to date to fit this description,
+so is it even possible to launch an armed attack online?
+
+\subsection*{Discriminate Attack}
+The Stuxnet worm leaked into the wild and infected civilian and government
+devices. A failure to control weapons in kinetic warfare is outlawed as
+indiscriminate, but it's not certain the same applies to malware, in which there
+is little danger of harm relative to illegal kinetic attacks, such as chemical
+warfare.\footnote{\cite{genevaArticle51}} The civilian infection was not
 necessarily harmful, and does mere infection equate to an attack in cyberspace?
+Whether it was harmful or not, are there expectations for special consideration
+of civilians in cyberspace?\footnote{\cite{TODO}}
 
+The stakes are raised in the case of infected industry systems, however. Infection at
+locations operating the targeted Siemens machines are subject to the same risk
+and harm as the intended target, Iran.
+
+\subsection*{Accountability}
 It seems obvious that, if decided to be in violation of any laws, the sponsors
 of the malware and its authors could be held responsible. There may be
 additional participants to consider, though. In kinetic warfare,
@@ -232,16 +257,28 @@ munitions, and it is a duty of the neutral state to ensure that is the
 case.\footnote{\cite{hagueConventionV5}. See Articles 2 and 5.} Is it legal
 to move malware through the infrastructure of neutral states, and can those
 states be held responsible for allowing it?
+% Edgar suggested Hague is an outdated concept, but the Tallinn Manual itself
+% quotes it (double check that)?
 
+\subsection*{Retaliation, Defense and Rebuke}
 Equally important is the issue of enforcement and reprimanding states who are
 deemed in violation of any accepted law. The UN Charter allows for a use of
 force as self defense in Article 51, but could a military response to
 a computer hack be reasonable?\footnote{\cite{unCharter}. See Article 51.}
 
+If Stuxnet or similar attacks are decided to fall short of a qualification as a
+use of force can there be any retaliation taken? Particularly, what if the
+victim state doesn't have the means to defend itself, yet the United Nations
+doesn't deem the operation a use of force? This was the case in the 2008 attacks
+Russia launched on Estonia, who suffered a completely debilitated Internet for
+two weeks and received no aid after a request to the United Nations Security
+Council.\footnote{\cite{TODO}} Would an external state with
+sufficient capability have the United Nation's blessing to offer protection?
+
 \section*{Applying the Tallinn Manual to the Stuxnet Worm}
-  % Determine the applicability of Tallinn Manual to Stuxnet. Does it work?
+% Determine the applicability of Tallinn Manual to Stuxnet. Does it work?
 Now that there have been sufficient, specific issues raised with the
-applicability of existing law to cyberspace we turn to the Tallinn Manual to
+applicability of existing law to cyberspace, we turn to the Tallinn Manual to
 help. We'd like to determine whether the Tallinn Manual is an effective tool in
 practice by finding whether it proves useful when evaluating Stuxnet.
 
@@ -296,10 +333,6 @@ conflict.\footnote{\cite{genevaArticle51}}
 Issues on which the Tallinn Manual was not conclusive. What self-defense is
 legal when it's unclear whether an operation could be classified as an
 ``armed attack'', or when the Security Council has not yet reached an agreement?
-
-How might we determine what constitutes an armed cyber attack? Some states
-adopt a broad view of what constitutes illegal force, while others have developed
-a much narrower classification.\footnote{\cite{tallinnManual}, page 17, para 3.}
 
 As mentioned, Tallinn Manual is clear that cyber operations alone could amount to an armed
 attack,\footnote{\cite{tallinnManual}, rule 22.} but provide little means to
