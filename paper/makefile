@@ -1,10 +1,10 @@
 CC=pdflatex
 
-all: tallinn-and-stuxnet.pdf
+all: adopting-tallinn.pdf
 
 %.pdf: %.ltx makefile %.bib
 	$(CC) $<
-	biber tallinn-and-stuxnet
+	biber adopting-tallinn
 	$(CC) $<
 
 clean:

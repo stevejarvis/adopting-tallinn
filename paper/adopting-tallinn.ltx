@@ -24,14 +24,14 @@
 % Bibliography
 \usepackage[utf8]{inputenc}
 \usepackage{biblatex-chicago}
-\addbibresource{tallinn-and-stuxnet.bib}
+\addbibresource{adopting-tallinn.bib}
 
 \begin{document}
 \maketitle
 
 % body
 \section*{Introduction}
-The battlefield of the world is changing. For better or worse, militaries can
+Recent years have seen the battlefield of earth changing. For better or worse, militaries can
 largely trade in their guns for laptops and their soldiers for hackers. The
 nations of the world are connecting critical services and infrastructure to
 cyberspace, and with minimal technical or legal protections in place. The
@@ -176,16 +176,17 @@ widely held that their nuclear program did suffer significant setbacks, on the
 order of what could have been accomplished with a kinetic
 attack.\footnote{\cite{stuxnetIsis}}
 
-As is with many worms, Stuxnet proved difficult to control. It leaked into the
+As is with many worms, and almost by design, Stuxnet proved difficult to
+control.\footnote{\cite{TODO cite the design comment}} It leaked into the
 wild and infected an untold number of civilian computers in more than a dozen
-countries.\footnote{\cite{stuxnetMicroscope}. See page 15.} Eugene Kapersky, of
-the Russian security company Kapersky Labs, claimed the virus even infected the
-Russian nuclear facilities. He is not alone in these claims, either, with as
-many as 15 other industrial complexes around the world believed to have been
-infected.\footnote{\cite{stuxnetPlants}}
+countries.\footnote{\cite{stuxnetMicroscope}. See page 15.} Eugene Kapersky,
+founder of the Russian security company Kapersky Labs, claimed the virus even
+infected the Russian nuclear facilities. He is not alone in these claims,
+either, with as many as 15 other industrial complexes around the world
+believed to have been infected by Stuxnet.\footnote{\cite{stuxnetPlants}}
 
-The distinction between civilian and nuclear or industrial facility infection
-is significant, not only due to concerns
+The distinction here between civilian and nuclear or industrial facility
+infection is significant, not only due to concerns
 regarding civilian targeting, but because of the nature of Stuxnet itself.
 Stuxnet was designed to recognize the hardware on which it was running, and if
 it wasn't on specific Siemen's PLCs it would sit
@@ -195,19 +196,19 @@ whatsoever. The infected industrial facilities, however, would likely suffer
 grave damage, just as Iran's facility is believed to have experienced at
 Natanz.\footnote{\cite{stuxnetIsis}}
 
-\section*{Cyber Issues Where Traditional Law is Lacking}
+\section*{Issues Where Traditional Law is Lacking}
 Cyber operations like Stuxnet are unlike any with which the world has yet dealt.
-The execution of these attacks raise many questions where guidance from a
+The executions of these attacks raise many questions where guidance from a
 suitable guide is desired to determine which laws, if any, were broken, how
 severely they were broken, and what response might be warranted. There are a few
-issues which warrant specific focus:
+issues raised by Stuxnet which warrant specific consideration:
 
 \subsection*{Use of Force}
-At the most basic, it is not clear whether Stuxnet was even illegal under
+At perhaps the most fundamental, it is not clear whether Stuxnet was illegal under
 international law. To determine its legality there would need to be consensus
 that it did violate a law or laws already in place. One of the foremost laws
-would be that prohibiting a use of force, set forth by Article 2(4) of the UN
-Charter. It states:
+would be that prohibiting a use of force, set forth by Article 2(4) of the
+United Nations Charter. It states:
 
 \begin{quote}
   All Members shall refrain in their international relations from the threat or
@@ -218,21 +219,22 @@ Charter. It states:
 
 Stuxnet's classification as a use of force is not clear, however. Though the
 distinction is not defined in the Charter, a traditional use of force involves
-military force and violence, whereas Stuxnet, as most cyber attacks, did not
-even include a physical presence.
+military force and violence, whereas Stuxnet, and nearly all cyber attacks, did
+not even include a physical presence.
 
 \subsection*{Armed Attack}
 Some states adopt a generally encompassing definition of what constitutes
-illegal force, while others operate with much narrower
-classifications.\footnote{\cite{tallinnManual}, page 17, para 3.} Supposing the
+an illegal use of force, while others operate with much narrower
+classifications that limit a use of force to be really the same as an armed
+attack.\footnote{\cite{tallinnManual}, page 17, para 3.} Supposing the
 international community accepts the view that an armed attack always coincides a
-use of force this issue is the same as the last, but this is unlikely. How might
-an armed cyber attack be quantified?
+use of force this issue is the same as the last, but any consensus for a further
+definition of the terms is unlikely.\footnote{\cite{TODO}}
 
 Some popular definitions of an armed attack require it to be violent, political,
 and (TODO this definition was in our reading one week). There have been no
-cyber-only attacks to date to fit this description,
-so is it even possible to launch an armed attack online?
+cyber-only attacks to date to fit this description, so is it even possible to
+launch an armed attack online? How might an armed cyber attack be quantified?
 
 \subsection*{Discriminate Attack}
 The Stuxnet worm leaked into the wild and infected civilian and government
@@ -428,7 +430,7 @@ The efforts of the Tallinn Manual will give us confidence in the
 international arena that we, collectively, are continuing to act in cyber
 space in the spirit of already established and accepted international laws.
 
-\section*{Where Adoption Brings International Cyber Space}
+\section*{Where Adoption Would Bring the International Community}
 Analysis of the solution.
 The solution is neither complete nor final, but as with all law, we must
 set up a solid base with which to work and progress over time. The
@@ -463,6 +465,20 @@ applied to the cyber world.
 Achieving concurrence on acceptable cyber acts will likely prove
 challenging, but it is a necessary feature as the cyber space continues to
 evolve in ways not yet considered.
+
+Another notable, though indirect, potential effect is the preservation of an
+open internet within and among sovereign states. As the states of the world
+realize the potential damage inflicted by attacks launched via cyberspace they are
+taking measures to secure, regulate and police domestic networks, often at the
+expense of some traditional internet freedoms.\footnote{\cite{TODO cte EFF?}}
+For example, while the United States hasn't passed significant regulation on
+networks and software to defend against cyber attacks, there's many arguments
+to establish such proposals.
+
+\begin{quote}
+[...] industry only responds when you threaten regulation. If industry doesn't
+respond (to the threat), you have to follow through.\footnote{\cite{TODO http://www.sfgate.com/business/article/Former-White-House-aide-backs-some-Net-regulation-2729985.php}}
+\begin{quote}
 
 \section*{Conclusion}
 Conclusion
