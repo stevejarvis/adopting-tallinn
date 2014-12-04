@@ -6,11 +6,14 @@
 % Now the actual document
 \newcommand{\hwtitle}{International Adoption of the Tallinn Manual}
 \newcommand{\hwsubtitle}{Examining Legality and Repercussions of the Stuxnet Worm}
-\newcommand{\hwcompletetitle}{\hwtitle{} - \hwsubtitle{}}
+\newcommand{\hwcompletetitle}{\hwtitle{} : \newline\hwsubtitle{}}
+
+% To modify title spacing later
+\usepackage{titling}
 
 \author{Steve Jarvis}
 \title{\hwcompletetitle{}}
-\date{\today}
+\date{Boston University, CS 591: Cybersecurity and Policy \endgraf \today}
 
 % Doc formatting, double space with 1.25 sides and 1'' top/bottom
 \usepackage{setspace}
@@ -26,8 +29,16 @@
 \usepackage[notes]{biblatex-chicago}
 \addbibresource{adopting-tallinn.bib}
 
+% Say bibliography, not references
+\DefineBibliographyStrings{english}{%
+  references = {Bibliography},
+}
+
 \begin{document}
 
+% Title a third of the way down. Name, class, date a few lines later.
+\posttitle{\par\end{center}\vskip 2in}
+\setlength{\droptitle}{1in} % Not absolute, just moves it by 'x' amount
 \maketitle
 \newpage
 
@@ -302,12 +313,14 @@ that it did violate a law or laws already in place. One of the foremost
 (though certainly not only) laws would be that prohibiting a use of force, set forth
 by Article 2(4) of the United Nations Charter. Article 2(4) States:
 
+\singlespacing
 \begin{quote}
   All Members shall refrain in their international relations from the threat or
   use of force against the territorial integrity or political independence of
   any State, or in any other manner inconsistent with the Purposes of the United
   Nations.\footnote{\cite{unCharter}. See Article 2(4).}
 \end{quote}
+\doublespacing
 
 Regarding only this law, which was established for dealing with kinetic
 operations, Stuxnet's classification as a use of force is not
@@ -417,11 +430,13 @@ The manual goes on to say that the Experts were unanimous in determining cyber
 operations alone might qualify as armed
 conflict:
 
-      \begin{quote}
-        An armed conflict exists whenever there are hostilities, which
-        may include or be limited to cyber operations, occurring between two or
-        more States.\footnote{\cite{tallinnManual}, 71. See rule 22.}
-      \end{quote}
+\singlespacing
+\begin{quote}
+  An armed conflict exists whenever there are hostilities, which
+  may include or be limited to cyber operations, occurring between two or
+  more States.\footnote{\cite{tallinnManual}, 71. See rule 22.}
+\end{quote}
+\doublespacing
 
 This finding alone is significant, because it would bring responding to a cyber
 attack with a military use of force within the realm of possibility. This
@@ -470,6 +485,8 @@ international law.\footnote{\cite{areThereIntlRules}}
 Despite offering little means for identifying a specific threshold, there is a
 definition provided for a cyber (armed) attack. In an interview, Schmitt claimed
 that:
+
+\singlespacing
 \begin{quote}
   [...]the majority said that an attack, in the law of war, means
   you physically harm someone, you break something, you cause physical
@@ -477,13 +494,17 @@ that:
   needs to be actually repaired.\footnote{\cite{areThereIntlRules}.
     See paragraph 4.}
 \end{quote}
+\doublespacing
 
 The Tallinn Manual offers a similar definition, which is a:
+
+\singlespacing
 \begin{quote}
 ``[...] cyber operation, whether offensive or defensive, that is reasonably
 expected to cause injury or death to persons or damage or destruction to
 objects.''\footnote{\cite{tallinnManual}. See rule 30.}
 \end{quote}
+\doublespacing
 
 Both Schmitt's comment and the consensus of the legal scholars seem to suggest
 Stuxnet was an armed attack, yet the Experts still disagree it crossed the
@@ -545,12 +566,14 @@ the Tallinn Manual is one that needs to be improved in order to catch up with
 the age of the Internet. Michael Norris suggests an amendment to the Tallinn
 Manual's definition of cyber attack to reconcile (difference emphasized):
 
+\singlespacing
 \begin{quote}
   A cyber attack is a cyber operation, whether offensive or defensive, that is
   reasonably expected to cause injury or death to persons or damage or
   destruction to, \emph{or neutralization of},
   objects.\footnote{\cite{revisedRule30}}
 \end{quote}
+\doublespacing
 
 This amendment should not suggest that any disruption of service be regarded as
 a cyber attack, but needs to allow for protection in cases like the attack on
@@ -629,12 +652,14 @@ When asked about threshold of attacks and the significant damage that can be
 inflicted through cyberspace, Schmitt implied he believes the standards for
 classifying armed attacks in cyberspace will also evolve in coming years:
 
+\singlespacing
 \begin{quote}
   I anticipate that we'll see a lot of thresholds coming down that will
   allow States to respond more vibrantly to cyber attacks that  might not be
   possible under the law as we found it.\footnote{\cite{areThereIntlRules}.
     See paragraph 23.}
 \end{quote}
+\doublespacing
 
 Overall, the conclusions of the Tallinn Manual feel just and reasonable.
 Many of the issues not directly resolved are complex and likely require
@@ -666,10 +691,12 @@ to establish such proposals. Richard Clarke, a leading adviser on cyber
 security in the United States political space, is a proponent for greater
 regulations and had this to say of regulating the private sector:
 
+\singlespacing
 \begin{quote}
 [...] industry only responds when you threaten regulation. If industry doesn't
 respond (to the threat), you have to follow through.\footnote{\cite{clarkeRegulation}}
 \end{quote}
+\doublespacing
 
 The openness of the Internet makes it a space unlike any other, and the
 immediate censorship performed by totalitarian States proves it is a strong tool
